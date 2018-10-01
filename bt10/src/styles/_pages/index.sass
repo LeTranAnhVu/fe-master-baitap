@@ -1,2 +1,23 @@
+$vubackground: #730606
+$vucolor: white
 body
-	background: #dfdfdf
+	background: $vubackground
+	color: $vucolor
+
+.container
+	background: darken($vubackground,5%)
+	padding: 0px
+	.logo
+		.row
+			.col-md-8
+				h3
+					margin-top: 0.5rem
+	.navigate
+		margin: 20px 0px
+		background: darken($vubackground,8%)
+		a
+			margin: 1rem 3rem
+			font-size: 1.5em
+			text-decoration: none
+			color: $vucolor
+			display: inline-block

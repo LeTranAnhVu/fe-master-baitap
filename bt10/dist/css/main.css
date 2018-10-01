@@ -6323,6 +6323,22 @@ html, body {
     width: auto; } }
 
 body {
-  background: #dfdfdf; }
+  background: #730606;
+  color: white; }
+
+.container {
+  background: #5b0505;
+  padding: 0px; }
+  .container .logo .row .col-md-8 h3 {
+    margin-top: 0.5rem; }
+  .container .navigate {
+    margin: 20px 0px;
+    background: #4c0404; }
+    .container .navigate a {
+      margin: 1rem 3rem;
+      font-size: 1.5em;
+      text-decoration: none;
+      color: white;
+      display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
