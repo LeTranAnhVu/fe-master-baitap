@@ -1,20 +1,22 @@
-$vubackground: #730606
+$vubackground: #9e9b96
 $vucolor: white
 body
 	background: $vubackground
 	color: $vucolor
 
 .container
-	background: darken($vubackground,5%)
+	.row
+		margin-left: 0
+		margin-right: 0
 	padding: 0px
 	.logo
 		.row
 			.col-md-8
-				h3
-					margin-top: 0.5rem
+				p
+					margin-top: 10px
 	.navigate
-		margin: 20px 0px
-		background: darken($vubackground,8%)
+		margin-top: 20px
+		background: darken($vubackground,30%)
 		a
 			margin: 0
 			padding: 0.5rem 3rem
@@ -22,17 +24,47 @@ body
 			text-decoration: none
 			color: $vucolor
 			display: inline-block
+			box-shadow: 5px 0px 2px -5px white
 			&:hover
-				background: black
+				background: darken($vubackground,40%)
 	.title
-		
-		background: #579057
+		margin-top: 20px
+		background: #737b7399
 		.row
+			.col-md-3
+				padding: 0
+				img 
+					// flip the img
+					-moz-transform: scaleX(-1)
+					-o-transform: scaleX(-1)
+					-webkit-transform: scaleX(-1)
+					transform: scaleX(-1)
+					filter: FlipH
+					-ms-filter: "FlipH"
 			.col-md-9
-				padding: 3rem
+				padding: 5%
+				.main-title
+					h1
+						font-size: 4em
+			
 	.content
 		margin-top: 20px
-		.col-md-4
-			background: green
-		.col-md-8
-			padding: 2rem
+		.col-md-3
+			padding: 0
+			padding-top: 20px
+			background: #8aa18a
+			a
+				display: block
+				padding: 10px 40px
+				color: white
+				text-decoration: none
+				font-size: 1.5em
+				box-shadow: 0px 15px 0.5px -15px white
+				&:hover
+					background: darken(#8aa18a,20%)
+		.col-md-9
+			background: #d1c9a4
+			padding: 4rem
+			color: #44485e
+			p
+				font-size: 1.5em
