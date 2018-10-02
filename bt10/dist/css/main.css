@@ -6335,10 +6335,23 @@ body {
     margin: 20px 0px;
     background: #4c0404; }
     .container .navigate a {
-      margin: 1rem 3rem;
+      margin: 0;
+      padding: 0.5rem 3rem;
       font-size: 1.5em;
       text-decoration: none;
       color: white;
       display: inline-block; }
+      .container .navigate a:hover {
+        background: black; }
+  .container .title {
+    background: #579057; }
+    .container .title .row .col-md-9 {
+      padding: 3rem; }
+  .container .content {
+    margin-top: 20px; }
+    .container .content .col-md-4 {
+      background: green; }
+    .container .content .col-md-8 {
+      padding: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
