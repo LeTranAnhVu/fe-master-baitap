@@ -6338,14 +6338,44 @@ body {
             body .container .row .main-box .window .description p {
               font-size: 1.3em;
               font-weight: bold; }
-          body .container .row .main-box .window .gia-moi {
+          body .container .row .main-box .window .cot-mot .gia-moi {
             font-size: 1.5em;
             color: red;
             font-weight: bold; }
-          body .container .row .main-box .window .gia-cu {
+          body .container .row .main-box .window .cot-mot .gia-cu {
             font-size: 1.2em;
             color: #7e6f6f;
             font-weight: bold;
             text-decoration: line-through; }
+          body .container .row .main-box .window .cot-hai {
+            padding-left: 10px;
+            padding-right: 0; }
+            body .container .row .main-box .window .cot-hai .tag-price {
+              background: red;
+              color: white;
+              position: relative;
+              height: 30px;
+              border-radius: 5px;
+              padding-left: 10px;
+              width: 100%; }
+              body .container .row .main-box .window .cot-hai .tag-price .tag-price-head {
+                width: 10px;
+                background: red;
+                height: 10px;
+                position: absolute;
+                top: 30%;
+                left: -4.5px;
+                transform: rotate(45deg);
+                z-index: -1;
+                border-radius: 2px; }
+              body .container .row .main-box .window .cot-hai .tag-price p {
+                padding: 3px;
+                font-weight: bold;
+                font-size: 1.2em; }
+          body .container .row .main-box .window .cot-ba {
+            padding: 0; }
+          body .container .row .main-box .window .cot-bon {
+            padding: 0;
+            background: red; }
 
 /*# sourceMappingURL=main.css.map */
