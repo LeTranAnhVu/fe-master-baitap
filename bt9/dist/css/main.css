@@ -6328,14 +6328,24 @@ body {
     padding: 0; }
     body .container .row {
       margin: 0; }
-      body .container .row .col-md-3.main-box {
+      body .container .row .main-box {
+        position: relative;
         padding: 10px; }
-        body .container .row .col-md-3.main-box .window {
+        body .container .row .main-box .window {
           box-shadow: 0px 0px 0px 8px #c4c7c4; }
-          body .container .row .col-md-3.main-box .window .description {
+          body .container .row .main-box .window .description {
             padding: 10px 10px; }
-            body .container .row .col-md-3.main-box .window .description p {
+            body .container .row .main-box .window .description p {
               font-size: 1.3em;
               font-weight: bold; }
+          body .container .row .main-box .window .gia-moi {
+            font-size: 1.5em;
+            color: red;
+            font-weight: bold; }
+          body .container .row .main-box .window .gia-cu {
+            font-size: 1.2em;
+            color: #7e6f6f;
+            font-weight: bold;
+            text-decoration: line-through; }
 
 /*# sourceMappingURL=main.css.map */
