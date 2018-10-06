@@ -1,70 +1,34 @@
-$vubackground: #9e9b96
-$vucolor: white
+$vubackground: white
+$vucolor: black
+
+.no-padding
+	padding: 0
+.no-margin
+	margin: 0
+@mixin ab-position($top , $right: $top, $bottom: $top, $left: $right )
+	position: absolute
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+
+
 body
 	background: $vubackground
 	color: $vucolor
-
-.container
-	.row
-		margin-left: 0
-		margin-right: 0
-	padding: 0px
-	.logo
-		.row
-			.col-md-8
-				p
-					margin-top: 10px
-	.navigate
-		margin-top: 20px
-		background: darken($vubackground,30%)
-		a
-			margin: 0
-			padding: 0.5rem 3rem
-			font-size: 1.5em
-			text-decoration: none
-			color: $vucolor
-			display: inline-block
-			box-shadow: 5px 0px 2px -5px white
-			&:hover
-				background: darken($vubackground,40%)
-	.title
-		margin-top: 20px
-		background: #737b7399
-		.row
-			.col-md-3
-				padding: 0
-				img 
-					// flip the img
-					-moz-transform: scaleX(-1)
-					-o-transform: scaleX(-1)
-					-webkit-transform: scaleX(-1)
-					transform: scaleX(-1)
-					filter: FlipH
-					-ms-filter: "FlipH"
-			.col-md-9
-				padding: 5%
-				.main-title
-					h1
-						font-size: 4em
-			
-	.content
-		margin-top: 20px
-		.col-md-3
-			padding: 0
-			padding-top: 20px
-			background: #8aa18a
-			a
-				display: block
-				padding: 10px 40px
-				color: white
-				text-decoration: none
-				font-size: 1.5em
-				box-shadow: 0px 15px 0.5px -15px white
-				&:hover
-					background: darken(#8aa18a,20%)
-		.col-md-9
-			background: #d1c9a4
-			padding: 4rem
-			color: #44485e
-			p
-				font-size: 1.5em
+	.main-banner-box
+		margin-bottom: 4% 
+		.main-banner-pic
+			width: 100%
+	.main-content-container
+		.major-product-container
+			.row
+				[class*="col-"]
+					.minor-banner-box
+						margin: 1vw
+					.product-box
+						margin: 1vw
+						position: relative
+						.product-info
+							@include ab-position(10px)
+							font-size: 1rem

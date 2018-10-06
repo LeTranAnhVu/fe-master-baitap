@@ -6322,66 +6322,30 @@ html, body {
   .container {
     width: auto; } }
 
-body {
-  background: #9e9b96;
-  color: white; }
+.no-padding {
+  padding: 0; }
 
-.container {
-  padding: 0px; }
-  .container .row {
-    margin-left: 0;
-    margin-right: 0; }
-  .container .logo .row .col-md-8 p {
-    margin-top: 10px; }
-  .container .navigate {
-    margin-top: 20px;
-    background: #514e4a; }
-    .container .navigate a {
-      margin: 0;
-      padding: 0.5rem 3rem;
-      font-size: 1.5em;
-      text-decoration: none;
-      color: white;
-      display: inline-block;
-      box-shadow: 5px 0px 2px -5px white; }
-      .container .navigate a:hover {
-        background: #363532; }
-  .container .title {
-    margin-top: 20px;
-    background: #737b7399; }
-    .container .title .row .col-md-3 {
-      padding: 0; }
-      .container .title .row .col-md-3 img {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH"; }
-    .container .title .row .col-md-9 {
-      padding: 5%; }
-      .container .title .row .col-md-9 .main-title h1 {
-        font-size: 4em; }
-  .container .content {
-    margin-top: 20px; }
-    .container .content .col-md-3 {
-      padding: 0;
-      padding-top: 20px;
-      background: #8aa18a; }
-      .container .content .col-md-3 a {
-        display: block;
-        padding: 10px 40px;
-        color: white;
-        text-decoration: none;
-        font-size: 1.5em;
-        box-shadow: 0px 15px 0.5px -15px white; }
-        .container .content .col-md-3 a:hover {
-          background: #586d58; }
-    .container .content .col-md-9 {
-      background: #d1c9a4;
-      padding: 4rem;
-      color: #44485e; }
-      .container .content .col-md-9 p {
-        font-size: 1.5em; }
+.no-margin {
+  margin: 0; }
+
+body {
+  background: white;
+  color: black; }
+  body .main-banner-box {
+    margin-bottom: 4%; }
+    body .main-banner-box .main-banner-pic {
+      width: 100%; }
+  body .main-content-container .major-product-container .row [class*="col-"] .minor-banner-box {
+    margin: 1vw; }
+  body .main-content-container .major-product-container .row [class*="col-"] .product-box {
+    margin: 1vw;
+    position: relative; }
+    body .main-content-container .major-product-container .row [class*="col-"] .product-box .product-info {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+      font-size: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
