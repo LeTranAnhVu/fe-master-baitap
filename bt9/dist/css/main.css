@@ -6322,6 +6322,9 @@ html, body {
   .container {
     width: auto; } }
 
+.transition-all-500-ms {
+  transition: ease-out all 0.5s; }
+
 body {
   background: #dfdfdf; }
   body .container {
@@ -6334,8 +6337,10 @@ body {
         body .container .row .main-box .window {
           position: relative;
           box-shadow: 0px 0px 0px 8px #c4c7c4; }
+          body .container .row .main-box .window .main-pic-contain {
+            opacity: 1; }
           body .container .row .main-box .window .thoi-han-contain {
-            visibility: hidden;
+            opacity: 0;
             width: 70%;
             background: #6667696e;
             position: absolute;
@@ -6343,12 +6348,11 @@ body {
             left: 30%;
             color: white;
             font-weight: bold;
-            padding: 2px 0;
             border-radius: 5px; }
             body .container .row .main-box .window .thoi-han-contain .row .col-2 {
               padding: 0; }
             body .container .row .main-box .window .thoi-han-contain .row .col-10 {
-              padding: 5px; }
+              padding: 2%; }
               body .container .row .main-box .window .thoi-han-contain .row .col-10 p {
                 margin: 0; }
           body .container .row .main-box .window .xem-ngay-contain {
@@ -6356,13 +6360,14 @@ body {
             position: absolute;
             top: 30%;
             left: 35%;
-            visibility: hidden; }
+            opacity: 0; }
           body .container .row .main-box .window .doc-quyen-contain {
             width: 30%;
             position: absolute;
             top: 2%;
             right: 2%;
-            transform: rotate(45deg); }
+            transform: rotate(45deg);
+            opacity: 1; }
           body .container .row .main-box .window .dia-diem-contain {
             width: 35%;
             position: absolute;
@@ -6375,7 +6380,7 @@ body {
             body .container .row .main-box .window .dia-diem-contain .row .col-2 {
               padding: 0; }
             body .container .row .main-box .window .dia-diem-contain .row .col-10 {
-              padding-left: 10px; }
+              padding-left: 10%; }
               body .container .row .main-box .window .dia-diem-contain .row .col-10 p {
                 font-weight: bold;
                 color: white;
@@ -6390,11 +6395,11 @@ body {
             height: 30px;
             padding: 0; }
             body .container .row .main-box .window .evoucher-contain .row .col-3 {
-              padding: 2px; }
+              padding: 2%; }
             body .container .row .main-box .window .evoucher-contain .row .col-9 {
-              padding-left: 7px; }
+              padding-left: 1%; }
               body .container .row .main-box .window .evoucher-contain .row .col-9 p {
-                padding: 5px 0px;
+                padding: 7% 0px;
                 font-weight: bold;
                 color: white;
                 margin: 0; }
@@ -6459,11 +6464,13 @@ body {
                   font-size: 1.2em;
                   font-weight: bold;
                   color: #7e6f6f; }
-        body .container .row .main-box:hover .doc-quyen-contain {
-          visibility: hidden; }
-        body .container .row .main-box:hover .xem-ngay-contain {
-          visibility: visible; }
-        body .container .row .main-box:hover .thoi-han-contain {
-          visibility: visible; }
+        body .container .row .main-box:hover {
+          box-shadow: 0px 0px 0px 2px white; }
+          body .container .row .main-box:hover .doc-quyen-contain {
+            opacity: 0; }
+          body .container .row .main-box:hover .xem-ngay-contain {
+            opacity: 1; }
+          body .container .row .main-box:hover .thoi-han-contain {
+            opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

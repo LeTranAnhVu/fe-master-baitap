@@ -1,5 +1,8 @@
 
 
+.transition-all-500-ms
+	transition: ease-out all 0.5s
+
 body
 	background: #dfdfdf
 	.container
@@ -12,23 +15,24 @@ body
 				.window
 					position: relative
 					box-shadow: 0px 0px 0px 8px lighten(#8f968f,20%)
+					.main-pic-contain
+						opacity: 1
 					.thoi-han-contain
-						visibility: hidden
+						opacity: 0
 						width: 70%
 						background: #6667696e
 						position: absolute
 						top: 50%
 						left: 30%
-						// height: 23px
 						color: white
 						font-weight: bold
-						padding: 2px 0
+						// padding: 2px 0
 						border-radius: 5px
 						.row
 							.col-2
 								padding: 0
 							.col-10
-								padding: 5px
+								padding: 2%
 								p 
 									margin: 0
 					.xem-ngay-contain
@@ -36,7 +40,7 @@ body
 						position: absolute
 						top: 30%
 						left: 35%
-						visibility: hidden
+						opacity: 0
 
 					.doc-quyen-contain
 						width: 30%
@@ -44,6 +48,7 @@ body
 						top: 2%
 						right: 2%
 						transform: rotate(45deg)
+						opacity: 1
 					.dia-diem-contain
 						width: 35%
 						position: absolute
@@ -57,7 +62,7 @@ body
 							.col-2
 								padding: 0
 							.col-10
-								padding-left: 10px
+								padding-left: 10%
 								p
 									font-weight: bold
 									color: white
@@ -73,11 +78,11 @@ body
 						padding: 0
 						.row
 							.col-3
-								padding: 2px
+								padding: 2%
 							.col-9
-								padding-left: 7px
+								padding-left: 1%
 								p
-									padding: 5px 0px
+									padding: 7% 0px
 									font-weight: bold
 									color: white
 									margin: 0
@@ -148,12 +153,14 @@ body
 										font-weight: bold
 										color: #7e6f6f
 				&:hover
+					box-shadow: 0px 0px 0px 2px white
 					.doc-quyen-contain
-						visibility: hidden
+						opacity: 0
 					.xem-ngay-contain
-						visibility: visible
+						opacity: 1
 					.thoi-han-contain
-						visibility: visible
+						opacity: 1
+					
 						
 					
 					
