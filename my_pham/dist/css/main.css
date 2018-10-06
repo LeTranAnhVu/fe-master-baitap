@@ -6314,9 +6314,25 @@ a.text-dark:hover, a.text-dark:focus {
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 8px;
   height: 100%;
   width: 100%; }
+
+@media only screen and (min-width: 500px) {
+  html, body {
+    font-size: 10px; } }
+
+@media only screen and (min-width: 760px) {
+  html, body {
+    font-size: 10px; } }
+
+@media only screen and (min-width: 1000px) {
+  html, body {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 1200px) {
+  html, body {
+    font-size: 14px; } }
 
 @media print {
   .container {
@@ -6339,13 +6355,30 @@ body {
     margin: 1vw; }
   body .main-content-container .major-product-container .row [class*="col-"] .product-box {
     margin: 1vw;
-    position: relative; }
+    position: relative;
+    opacity: 1;
+    transition: ease-in-out all 500ms; }
+    body .main-content-container .major-product-container .row [class*="col-"] .product-box .product-pic {
+      transition: ease-in-out all 500ms; }
     body .main-content-container .major-product-container .row [class*="col-"] .product-box .product-info {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      bottom: 10px;
-      left: 10px;
-      font-size: 1rem; }
+      top: 75%;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      width: 15rem;
+      transform: translateX(-50%);
+      background: white;
+      font-size: 1rem;
+      text-align: center;
+      padding: 2% 0px;
+      opacity: 0.5;
+      transition: ease-in-out all 500ms; }
+    body .main-content-container .major-product-container .row [class*="col-"] .product-box:hover {
+      box-shadow: 0px 0px 3px 2px gray; }
+      body .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-pic {
+        opacity: 0.8; }
+      body .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-info {
+        opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

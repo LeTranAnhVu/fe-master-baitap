@@ -1,6 +1,7 @@
 $vubackground: white
 $vucolor: black
 
+
 .no-padding
 	padding: 0
 .no-margin
@@ -11,7 +12,9 @@ $vucolor: black
 	right: $right
 	bottom: $bottom
 	left: $left
-
+	
+@mixin transition-all-in-ms($ms)
+	transition: ease-in-out all $ms
 
 body
 	background: $vubackground
@@ -29,6 +32,26 @@ body
 					.product-box
 						margin: 1vw
 						position: relative
+						opacity: 1
+						.product-pic
+							@include transition-all-in-ms(500ms)
 						.product-info
-							@include ab-position(10px)
+							@include ab-position(75%, auto, auto ,50%)
+							width: 15rem
+							transform: translateX(-50%) 
+							background: white
 							font-size: 1rem
+							text-align: center
+							padding: 2% 0px
+							opacity: 0.5
+							@include transition-all-in-ms(500ms)
+						
+						@include transition-all-in-ms(500ms)
+						&:hover
+							box-shadow: 0px 0px 3px 2px darken($vubackground,50%)
+							.product-pic
+								opacity: 0.8
+							.product-info
+								opacity: 1
+
+
