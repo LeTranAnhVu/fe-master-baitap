@@ -1,5 +1,7 @@
 'use strict';
 
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
 eval(function (p, a, c, k, _e, r) {
     _e = function e(c) {
         return (c < a ? '' : _e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36));
@@ -33,4 +35,14 @@ $(function () {
 });
 // Main
 console.log('FullStack Vietnam!');
+
+$(document).ready(function (_ref) {
+    _objectDestructuringEmpty(_ref);
+
+    $('.owl-carousel').owlCarousel({
+        nav: true,
+        dots: false,
+        items: 1
+    });
+});
 //# sourceMappingURL=main.js.map
