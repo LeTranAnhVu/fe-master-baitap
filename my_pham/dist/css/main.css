@@ -6344,23 +6344,23 @@ html, body {
 .no-margin {
   margin: 0; }
 
-body {
+body .home {
   background: white;
   color: black; }
-  body .main-banner-box {
+  body .home .main-banner-box {
     margin-bottom: 4%; }
-    body .main-banner-box .main-banner-pic {
+    body .home .main-banner-box .main-banner-pic {
       width: 100%; }
-  body .main-content-container .major-product-container .row [class*="col-"] .minor-banner-box {
+  body .home .main-content-container .major-product-container .row [class*="col-"] .minor-banner-box {
     margin: 1vw; }
-  body .main-content-container .major-product-container .row [class*="col-"] .product-box {
+  body .home .main-content-container .major-product-container .row [class*="col-"] .product-box {
     margin: 1vw;
     position: relative;
     opacity: 1;
     transition: ease-in-out all 500ms; }
-    body .main-content-container .major-product-container .row [class*="col-"] .product-box .product-pic {
+    body .home .main-content-container .major-product-container .row [class*="col-"] .product-box .product-pic {
       transition: ease-in-out all 500ms; }
-    body .main-content-container .major-product-container .row [class*="col-"] .product-box .product-info {
+    body .home .main-content-container .major-product-container .row [class*="col-"] .product-box .product-info {
       position: absolute;
       top: 75%;
       right: auto;
@@ -6374,11 +6374,19 @@ body {
       padding: 2% 0px;
       opacity: 0.5;
       transition: ease-in-out all 500ms; }
-    body .main-content-container .major-product-container .row [class*="col-"] .product-box:hover {
+    body .home .main-content-container .major-product-container .row [class*="col-"] .product-box:hover {
       box-shadow: 0px 0px 3px 2px gray; }
-      body .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-pic {
+      body .home .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-pic {
         opacity: 0.8; }
-      body .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-info {
+      body .home .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-info {
         opacity: 1; }
+  body .home .minor-product-container {
+    background: #dbdfe8;
+    width: 100%; }
+    body .home .minor-product-container .inner-minor-product-container {
+      margin: 30px 0; }
+      body .home .minor-product-container .inner-minor-product-container .row .title-box {
+        text-align: center;
+        color: #514646; }
 
 /*# sourceMappingURL=main.css.map */
