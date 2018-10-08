@@ -7,10 +7,16 @@ block variables
 
 block body
 	section.home
-		.container-fluid.no-padding
+		section.container-fluid.no-padding.main-carousel.owl-carousel.owl-theme
 			.main-banner-box
 				img.img-fluid.main-banner-pic(src="./img/home_banner_01.png", alt="my pham chat luong")
-		.container.main-content-container
+			.main-banner-box
+				img.img-fluid.main-banner-pic(src="./img/home_banner_01.png", alt="my pham chat luong")
+			.main-banner-box
+				img.img-fluid.main-banner-pic(src="./img/home_banner_01.png", alt="my pham chat luong")
+			.main-banner-box
+				img.img-fluid.main-banner-pic(src="./img/home_banner_01.png", alt="my pham chat luong")
+		section.container.main-content-container
 			.major-product-container
 				.row.no-margin
 					.col-md-8.no-padding
@@ -44,15 +50,116 @@ block body
 								h6 Ice-cream - Maple Brown
 								p.no-margin 360,000
 									sup đ
-
-		.minor-product-container
+		section.minor-product-container
 			.container.inner-minor-product-container
-				.row
-					.col.title-box
-						h1 Top pieces on sale
-		.advertise-container
-		.best-seller-container
+				.title-box
+					h1.mb-0 Top pieces on sale
+				//- carousel
+				.minor-carousel.owl-carousel.owl-theme
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_01.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_02.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_03.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_04.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_03.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.btn.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_01.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_02.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_03.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_04.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.own-btn contact
+					.product-box
+							img.img-fluid.product-pic(src="./img/home_product_small_03.png", alt="")
+							.product-info
+								h6.mb-0 Ice-cream - Maple Brown
+								p.no-margin 360,000
+									sup đ
+								button.btn.own-btn contact
+			.container.event-container
+				.event-box
+					img.img-fluid(src="./img/home_banner_03.png", alt="")
+		section.best-seller-container
+			.container.inner-best-seller-container
+				.title-box
+					h1.mb-0 best seller
+				//- carousel
+				.best-seller-carousel.owl-carousel.owl-theme
+					.product-box
+						.row
+							.col-md-7.col-6
+								.product-pic-box
+									img.img-fluid.product-pic(src="./img/home_slider_01.png", alt="")
+							.col-md-5.col-6
+								.product-pic-box
+									img.img-fluid.product-pic(src="./img/home_slider_small_01.png", alt="")
+									.product-info
+										h5 Ice-cream - Maple Brown
+										p.no-margin 360,000
+											sup đ
+										.btn.btn-danger.btn-lg view more
+
+
+
+
+							
 			
 
 
 
+
+//- .product-info
+//- 	h6.mb-0 Ice-cream - Maple Brown
+//- 	p.no-margin 360,000
+//- 		sup đ
+//- 	button.own-btn contact

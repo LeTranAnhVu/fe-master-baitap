@@ -6318,6 +6318,18 @@ html, body {
   height: 100%;
   width: 100%; }
 
+header {
+  background: #4e59a5; }
+  header nav.navbar.navbar-expand-md.navbar-light.container .navbar-brand {
+    color: #e6e6e6;
+    padding: .5rem; }
+  header .ml-auto #navbarSupportedContent.collapse.navbar-collapse .navbar-nav [class*="nav-item"] {
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-size: 0.9rem; }
+    header .ml-auto #navbarSupportedContent.collapse.navbar-collapse .navbar-nav [class*="nav-item"] .nav-link {
+      color: #e6e6e6; }
+
 @media only screen and (min-width: 500px) {
   html, body {
     font-size: 10px; } }
@@ -6347,20 +6359,22 @@ html, body {
 body .home {
   background: white;
   color: black; }
-  body .home .main-banner-box {
-    margin-bottom: 4%; }
-    body .home .main-banner-box .main-banner-pic {
-      width: 100%; }
-  body .home .main-content-container .major-product-container .row [class*="col-"] .minor-banner-box {
+  body .home section.main-carousel .main-banner-box .main-banner-pic {
+    width: 100%; }
+  body .home section.main-carousel .owl-nav {
+    margin-top: 0; }
+    body .home section.main-carousel .owl-nav [class*="owl-"] span {
+      font-size: 3rem; }
+  body .home section.main-content-container .major-product-container .row [class*="col-"] .minor-banner-box {
     margin: 1vw; }
-  body .home .main-content-container .major-product-container .row [class*="col-"] .product-box {
+  body .home section.main-content-container .major-product-container .row [class*="col-"] .product-box {
     margin: 1vw;
     position: relative;
     opacity: 1;
     transition: ease-in-out all 500ms; }
-    body .home .main-content-container .major-product-container .row [class*="col-"] .product-box .product-pic {
+    body .home section.main-content-container .major-product-container .row [class*="col-"] .product-box .product-pic {
       transition: ease-in-out all 500ms; }
-    body .home .main-content-container .major-product-container .row [class*="col-"] .product-box .product-info {
+    body .home section.main-content-container .major-product-container .row [class*="col-"] .product-box .product-info {
       position: absolute;
       top: 75%;
       right: auto;
@@ -6374,19 +6388,66 @@ body .home {
       padding: 2% 0px;
       opacity: 0.5;
       transition: ease-in-out all 500ms; }
-    body .home .main-content-container .major-product-container .row [class*="col-"] .product-box:hover {
+    body .home section.main-content-container .major-product-container .row [class*="col-"] .product-box:hover {
       box-shadow: 0px 0px 3px 2px gray; }
-      body .home .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-pic {
+      body .home section.main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-pic {
         opacity: 0.8; }
-      body .home .main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-info {
+      body .home section.main-content-container .major-product-container .row [class*="col-"] .product-box:hover .product-info {
         opacity: 1; }
-  body .home .minor-product-container {
+  body .home section.minor-product-container {
     background: #dbdfe8;
-    width: 100%; }
-    body .home .minor-product-container .inner-minor-product-container {
-      margin: 30px 0; }
-      body .home .minor-product-container .inner-minor-product-container .row .title-box {
+    width: 100%;
+    overflow: auto; }
+    body .home section.minor-product-container .inner-minor-product-container {
+      margin: 30px auto; }
+      body .home section.minor-product-container .inner-minor-product-container .title-box {
+        padding: 3.2vw 0 1.5vw 0;
         text-align: center;
-        color: #514646; }
+        color: #514646;
+        text-transform: uppercase; }
+      body .home section.minor-product-container .inner-minor-product-container .minor-carousel {
+        position: relative; }
+        body .home section.minor-product-container .inner-minor-product-container .minor-carousel .owl-nav {
+          position: absolute;
+          margin: 0;
+          transform: translateY(-100%);
+          top: -10px;
+          right: 15px; }
+          body .home section.minor-product-container .inner-minor-product-container .minor-carousel .owl-nav [class*="owl-"] span {
+            font-size: 2rem; }
+        body .home section.minor-product-container .inner-minor-product-container .minor-carousel .product-box {
+          margin: 0 15px; }
+          body .home section.minor-product-container .inner-minor-product-container .minor-carousel .product-box .product-info {
+            margin: 10px 0;
+            text-align: center; }
+            body .home section.minor-product-container .inner-minor-product-container .minor-carousel .product-box .product-info .own-btn {
+              text-transform: uppercase;
+              color: white;
+              font-size: 0.8rem;
+              background: #756cff;
+              border-radius: 1px;
+              border: none;
+              width: 5.5rem;
+              opacity: 0;
+              padding-top: 3px;
+              padding-bottom: 2px;
+              transition: ease-in-out all 500ms; }
+          body .home section.minor-product-container .inner-minor-product-container .minor-carousel .product-box:hover .product-info .own-btn {
+            opacity: 1; }
+    body .home section.minor-product-container .event-container .event-box {
+      margin: 0px 15px 4vw 15px; }
+  body .home section.best-seller-container {
+    width: 100%;
+    background: white; }
+    body .home section.best-seller-container .inner-best-seller-container .title-box {
+      padding: 3.2vw 0 1.5vw 0;
+      text-align: center;
+      color: #514646;
+      text-transform: uppercase;
+      margin-bottom: 50px; }
+    body .home section.best-seller-container .inner-best-seller-container .product-box .row [class*="col-"] .product-pic-box .product-info {
+      text-align: center; }
+    body .home section.best-seller-container .inner-best-seller-container .product-box .row .col-md-5.col-6 .product-pic-box {
+      margin-top: 15%; }
 
 /*# sourceMappingURL=main.css.map */

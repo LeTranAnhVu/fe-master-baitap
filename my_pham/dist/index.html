@@ -84,16 +84,38 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body class="home-page" id="top-page"><!-- ////////////// Header ////////////// --><!-- ////////////// HEADER ////////////// -->
-    <header class="text-center p-3">
-      <h1 class="h3">FullStack Vietnam</h1>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light container">
+        <div class="navbar-brand"><a href="#"><img class="img-fluid" src="./img/logo.png" alt=""></a></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="ml-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">about us<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">all products</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">product 1</a><a class="dropdown-item" href="#">product 2</a>
+                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">best seller</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">events</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">photo review</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header><!-- ////////////// HEADER ////////////// --><!-- ////////////// End Header ////////////// -->
 <!-- ////////////// Begin Main ////////////// -->
     <main>
       <section class="home">
-        <div class="container-fluid no-padding">
+        <section class="container-fluid no-padding main-carousel owl-carousel owl-theme">
           <div class="main-banner-box"><img class="img-fluid main-banner-pic" src="./img/home_banner_01.png" alt="my pham chat luong"></div>
-        </div>
-        <div class="container main-content-container">
+          <div class="main-banner-box"><img class="img-fluid main-banner-pic" src="./img/home_banner_01.png" alt="my pham chat luong"></div>
+          <div class="main-banner-box"><img class="img-fluid main-banner-pic" src="./img/home_banner_01.png" alt="my pham chat luong"></div>
+          <div class="main-banner-box"><img class="img-fluid main-banner-pic" src="./img/home_banner_01.png" alt="my pham chat luong"></div>
+        </section>
+        <section class="container main-content-container">
           <div class="major-product-container">
             <div class="row no-margin">
               <div class="col-md-8 no-padding">
@@ -133,18 +155,114 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="minor-product-container">
+        </section>
+        <section class="minor-product-container">
           <div class="container inner-minor-product-container">
-            <div class="row">
-              <div class="col title-box">
-                <h1>Top pieces on sale</h1>
+            <div class="title-box">
+              <h1 class="mb-0">Top pieces on sale</h1>
+            </div>
+            <div class="minor-carousel owl-carousel owl-theme">
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_01.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_02.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_03.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_04.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_03.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="btn own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_01.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_02.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_03.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_04.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="own-btn">contact</button>
+                </div>
+              </div>
+              <div class="product-box"><img class="img-fluid product-pic" src="./img/home_product_small_03.png" alt="">
+                <div class="product-info">
+                  <h6 class="mb-0">Ice-cream - Maple Brown</h6>
+                  <p class="no-margin">360,000<sup>đ</sup></p>
+                  <button class="btn own-btn">contact</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="advertise-container"></div>
-        <div class="best-seller-container"></div>
+          <div class="container event-container">
+            <div class="event-box"><img class="img-fluid" src="./img/home_banner_03.png" alt=""></div>
+          </div>
+        </section>
+        <section class="best-seller-container">
+          <div class="container inner-best-seller-container">
+            <div class="title-box">
+              <h1 class="mb-0">best seller</h1>
+            </div>
+            <div class="best-seller-carousel owl-carousel owl-theme">
+              <div class="product-box">
+                <div class="row">
+                  <div class="col-md-7 col-6">
+                    <div class="product-pic-box"><img class="img-fluid product-pic" src="./img/home_slider_01.png" alt=""></div>
+                  </div>
+                  <div class="col-md-5 col-6">
+                    <div class="product-pic-box"><img class="img-fluid product-pic" src="./img/home_slider_small_01.png" alt="">
+                      <div class="product-info">
+                        <h5>Ice-cream - Maple Brown</h5>
+                        <p class="no-margin">360,000<sup>đ</sup></p>
+                        <div class="btn btn-danger btn-lg">view more</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main><!-- ////////////// End Main ////////////// -->
 <!-- ////////////// Footer ////////////// -->

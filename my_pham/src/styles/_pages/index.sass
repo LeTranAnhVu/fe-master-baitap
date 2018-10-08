@@ -20,11 +20,16 @@ body
 	.home
 		background: $vubackground
 		color: $vucolor
-		.main-banner-box
-			margin-bottom: 4% 
-			.main-banner-pic
-				width: 100%
-		.main-content-container
+		section.main-carousel
+			.main-banner-box
+				.main-banner-pic
+					width: 100%
+			.owl-nav
+				margin-top: 0
+				[class*="owl-"]
+					span
+						font-size: 3rem
+		section.main-content-container
 			.major-product-container
 				.row
 					[class*="col-"]
@@ -54,13 +59,74 @@ body
 									opacity: 0.8
 								.product-info
 									opacity: 1
-		.minor-product-container
+		section.minor-product-container
 			background: $minor-background
 			width: 100%
+			overflow: auto 
 			.inner-minor-product-container
-				margin: 30px 0
-				.row
-					.title-box
-						text-align: center
-						color: #514646
+				margin: 30px auto
+				.title-box
+					padding: 3.2vw 0 1.5vw 0
+					text-align: center
+					color: #514646
+					text-transform: uppercase
+				.minor-carousel
+					position: relative
+					.owl-nav
+						position: absolute
+						margin: 0
+						transform: translateY(-100%)
+						top: -10px
+						right: 15px
+
+						[class*="owl-"]
+							span
+								font-size: 2rem
+					.product-box
+						margin : 0 15px
+						.product-info
+							margin: 10px 0
+							text-align: center
+							.own-btn
+								text-transform: uppercase
+								color: white
+								font-size: 0.8rem
+								background: #756cff
+								border-radius: 1px
+								border: none
+								width: 5.5rem
+								opacity: 0
+								padding-top: 3px
+								padding-bottom: 2px
+								@include transition-all-in-ms(500ms)
+						&:hover
+							.product-info
+								.own-btn
+									opacity: 1
+			.event-container
+				.event-box
+					margin: 0px 15px 4vw 15px
+		section.best-seller-container
+			width: 100%
+			background: white
+			.inner-best-seller-container
+				.title-box
+					padding: 3.2vw 0 1.5vw 0
+					text-align: center
+					color: #514646
+					text-transform: uppercase
+					margin-bottom: 50px
+				.product-box
+					.row
+						[class*="col-"]
+							.product-pic-box
+								.product-info
+									text-align: center
+						.col-md-5.col-6
+							.product-pic-box
+								margin-top: 15%
+								
+
+
+
 
