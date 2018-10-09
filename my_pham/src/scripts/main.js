@@ -18,7 +18,7 @@ $(document).ready(function(){
 	$('.best-seller-carousel').owlCarousel({
 		items: 1,
 		dots: false,
-		nav: true
+		nav: true,
 	});
   });
   

@@ -6445,9 +6445,36 @@ body .home {
       color: #514646;
       text-transform: uppercase;
       margin-bottom: 50px; }
-    body .home section.best-seller-container .inner-best-seller-container .product-box .row [class*="col-"] .product-pic-box .product-info {
-      text-align: center; }
-    body .home section.best-seller-container .inner-best-seller-container .product-box .row .col-md-5.col-6 .product-pic-box {
-      margin-top: 15%; }
+    body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel {
+      position: relative; }
+      body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .product-box {
+        padding: 0px 10vw; }
+        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .product-box .row [class*="col-"] {
+          padding: 2vw; }
+          body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .product-box .row [class*="col-"] .product-pic-box .product-info {
+            text-align: center; }
+        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .product-box .row .col-md-5.col-6 .product-pic-box {
+          margin-top: 5%; }
+          body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .product-box .row .col-md-5.col-6 .product-pic-box .product-pic {
+            padding: 2vw; }
+      body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav button[class*="owl-"] {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%; }
+        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav button[class*="owl-"] span {
+          font-size: 2.5rem;
+          text-align: center;
+          margin: 0; }
+      body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-prev {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px; }
+      body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-next {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px; }
 
 /*# sourceMappingURL=main.css.map */
