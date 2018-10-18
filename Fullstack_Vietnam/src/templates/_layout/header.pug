@@ -1,4 +1,21 @@
 <!-- ////////////// HEADER ////////////// -->
-header.text-center.p-3
-	h1.h3 FullStack Vietnam
+header
+	nav.navbar.navbar-expand-lg.navbar-light.container
+			a.navbar-brand(href="#")
+				img.img-fluid(src="./img/logo.png", alt="")
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+				span.navbar-toggler-icon
+			#navbarSupportedContent.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto
+					li.nav-item.myactive
+						a.nav-link(href="#")
+							| Home 
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") Service
+					li.nav-item
+						a.nav-link(href="#") About
+					li.nav-item
+						a.nav-link(href="#") Contact
+
 <!-- ////////////// HEADER ////////////// -->

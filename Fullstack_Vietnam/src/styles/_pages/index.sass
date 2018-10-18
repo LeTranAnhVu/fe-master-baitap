@@ -1,2 +1,185 @@
-body
-	background: #dfdfdf
+$maincolor: purple
+header
+	background: white
+
+.navbar-nav
+	.nav-item
+		margin-left : 1rem
+		.nav-link
+			font-size: 1.5rem
+	.nav-item.myactive
+		.nav-link
+			color: purple
+
+html, body
+	
+	background: white
+	+media-breakpoint-up(xs)
+		font-size: 8px
+	+media-breakpoint-up(sm)
+		font-size: 10px
+	+media-breakpoint-up(md)
+		font-size: 14px
+
+section.home
+	section.main-carousel-container
+		width: 100%
+		.main-carousel
+			.owl-dots
+				.owl-dot
+					zoom: 0.5
+			+media-breakpoint-up(md)
+				.owl-dots
+					.owl-dot
+						zoom: 1
+			.banner-box
+				position: relative
+				.banner-title
+					width: 70%
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					color: white
+					//mobile
+					left: 5%
+					h1
+						font-size: 1.5rem
+						font-weight: bold
+					h4 
+						font-size: 1.3rem
+					// pc
+					+media-breakpoint-up(sm)
+						left: 10%
+						width: 60%
+						h1
+							font-size: 2rem
+							font-weight: bold
+						h4 
+							font-size: 1.5rem
+	
+	section.main-content-container
+		// mobile
+		margin-top: 10px
+		.main-title
+			text-align: center
+			h1
+				color: $maincolor
+				position: relative
+				span
+					color: black
+				&:before
+					display: block
+					content: ""
+					height: 2px
+					width: 20%
+					background: $maincolor
+					position: absolute
+					top: 30px
+					left: 50%
+					transform: translateX(-50%)
+					border-radius: 2px
+		.main-content-box
+			margin-top: 30px
+			.content-row
+				[class*="col-"]
+					.course-box
+						.pic-box
+							border-radius: 5px
+							overflow: hidden
+							position: relative
+							margin: 0px
+							transition: all 0.5s ease-in-out
+							.eye-focus
+								position: absolute
+								width: 20%
+								top: 50%
+								left: 50%
+								transform: translateX(-50%) translateY(-50%)
+								opacity: 0
+								transition: all 0.5s ease-in-out
+								
+						.course-description
+							margin-top: 10px
+							h6
+								font-size: 1.2rem
+								transition: all 0.5s ease-in-out
+							date, p
+								color: lighten(grey,10%)
+								font-size: 0.9rem
+								transition: all 0.5s ease-in-out
+						&:hover
+							.pic-box
+								background: grey
+								.course-pic
+									opacity: 0.2
+								.eye-focus
+									opacity: 1
+							.course-description
+								h6
+									color: $maincolor
+								date , p
+									color: black		
+		//pc
+		+media-breakpoint-up(md)
+			margin-top: 30px
+			.main-title
+				text-align: center
+				h1
+					$maincolor: purple
+					color: $maincolor
+					position: relative
+					span
+						color: black
+					&:before
+						display: block
+						content: ""
+						height: 0.3rem
+						width: 15%
+						background: $maincolor
+						position: absolute
+						top: 45px
+						left: 50%
+						transform: translateX(-50%)
+						border-radius: 2px
+			.main-content-box
+				margin-top: 50px
+
+	section.customers-container
+		// mobile
+		margin-top: 20px
+		.customers-carousel
+			.customer-box
+				margin: 0 5px
+			.owl-dots
+				.owl-dot
+					zoom: 0.3
+		// pc
+		+media-breakpoint-up(md)
+			margin-top: 50px
+			.customers-carousel
+				position: relative
+				.owl-nav
+					position: static
+					// top: 50%
+					// transform: translateY(-50%)
+					.owl-prev
+						position: absolute
+						left: -20px
+						top: 50%
+						transform: translateY(-50%)
+						zoom: 2
+					.owl-next
+						position: absolute
+						top: 50%
+						transform: translateY(-50%)
+						right: -25px
+						zoom: 2
+
+
+
+
+
+
+					
+
+

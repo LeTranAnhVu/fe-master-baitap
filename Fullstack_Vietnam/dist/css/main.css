@@ -6322,7 +6322,161 @@ html, body {
   .container {
     width: auto; } }
 
-body {
-  background: #dfdfdf; }
+header {
+  background: white; }
+
+.navbar-nav .nav-item {
+  margin-left: 1rem; }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.5rem; }
+
+.navbar-nav .nav-item.myactive .nav-link {
+  color: purple; }
+
+html, body {
+  background: white;
+  font-size: 8px; }
+  @media (min-width: 576px) {
+    html, body {
+      font-size: 10px; } }
+  @media (min-width: 768px) {
+    html, body {
+      font-size: 14px; } }
+
+section.home section.main-carousel-container {
+  width: 100%; }
+  section.home section.main-carousel-container .main-carousel .owl-dots .owl-dot {
+    zoom: 0.5; }
+  @media (min-width: 768px) {
+    section.home section.main-carousel-container .main-carousel .owl-dots .owl-dot {
+      zoom: 1; } }
+  section.home section.main-carousel-container .main-carousel .banner-box {
+    position: relative; }
+    section.home section.main-carousel-container .main-carousel .banner-box .banner-title {
+      width: 70%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      left: 5%; }
+      section.home section.main-carousel-container .main-carousel .banner-box .banner-title h1 {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      section.home section.main-carousel-container .main-carousel .banner-box .banner-title h4 {
+        font-size: 1.3rem; }
+      @media (min-width: 576px) {
+        section.home section.main-carousel-container .main-carousel .banner-box .banner-title {
+          left: 10%;
+          width: 60%; }
+          section.home section.main-carousel-container .main-carousel .banner-box .banner-title h1 {
+            font-size: 2rem;
+            font-weight: bold; }
+          section.home section.main-carousel-container .main-carousel .banner-box .banner-title h4 {
+            font-size: 1.5rem; } }
+
+section.home section.main-content-container {
+  margin-top: 10px; }
+  section.home section.main-content-container .main-title {
+    text-align: center; }
+    section.home section.main-content-container .main-title h1 {
+      color: purple;
+      position: relative; }
+      section.home section.main-content-container .main-title h1 span {
+        color: black; }
+      section.home section.main-content-container .main-title h1:before {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 20%;
+        background: purple;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px; }
+  section.home section.main-content-container .main-content-box {
+    margin-top: 30px; }
+    section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box .pic-box {
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      margin: 0px;
+      transition: all 0.5s ease-in-out; }
+      section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box .pic-box .eye-focus {
+        position: absolute;
+        width: 20%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 0;
+        transition: all 0.5s ease-in-out; }
+    section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box .course-description {
+      margin-top: 10px; }
+      section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box .course-description h6 {
+        font-size: 1.2rem;
+        transition: all 0.5s ease-in-out; }
+      section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box .course-description date, section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box .course-description p {
+        color: #9a9a9a;
+        font-size: 0.9rem;
+        transition: all 0.5s ease-in-out; }
+    section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box:hover .pic-box {
+      background: grey; }
+      section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box:hover .pic-box .course-pic {
+        opacity: 0.2; }
+      section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box:hover .pic-box .eye-focus {
+        opacity: 1; }
+    section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box:hover .course-description h6 {
+      color: purple; }
+    section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box:hover .course-description date, section.home section.main-content-container .main-content-box .content-row [class*="col-"] .course-box:hover .course-description p {
+      color: black; }
+  @media (min-width: 768px) {
+    section.home section.main-content-container {
+      margin-top: 30px; }
+      section.home section.main-content-container .main-title {
+        text-align: center; }
+        section.home section.main-content-container .main-title h1 {
+          color: purple;
+          position: relative; }
+          section.home section.main-content-container .main-title h1 span {
+            color: black; }
+          section.home section.main-content-container .main-title h1:before {
+            display: block;
+            content: "";
+            height: 0.3rem;
+            width: 15%;
+            background: purple;
+            position: absolute;
+            top: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px; }
+      section.home section.main-content-container .main-content-box {
+        margin-top: 50px; } }
+
+section.home section.customers-container {
+  margin-top: 20px; }
+  section.home section.customers-container .customers-carousel .customer-box {
+    margin: 0 5px; }
+  section.home section.customers-container .customers-carousel .owl-dots .owl-dot {
+    zoom: 0.3; }
+  @media (min-width: 768px) {
+    section.home section.customers-container {
+      margin-top: 50px; }
+      section.home section.customers-container .customers-carousel {
+        position: relative; }
+        section.home section.customers-container .customers-carousel .owl-nav {
+          position: static; }
+          section.home section.customers-container .customers-carousel .owl-nav .owl-prev {
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            zoom: 2; }
+          section.home section.customers-container .customers-carousel .owl-nav .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -25px;
+            zoom: 2; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -84,23 +84,98 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body class="home-page" id="top-page"><!-- ////////////// Header ////////////// --><!-- ////////////// HEADER ////////////// -->
-    <header class="text-center p-3">
-      <h1 class="h3">FullStack Vietnam</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light container"><a class="navbar-brand" href="#"><img class="img-fluid" src="./img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item myactive"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header><!-- ////////////// HEADER ////////////// --><!-- ////////////// End Header ////////////// -->
 <!-- ////////////// Begin Main ////////////// -->
     <main>
       <section class="home">
-        <div class="container">
-          <div class="row">
-            <div class="col p-4">
-              <div class="jumbotron text-center">
-                <h1 class="hidden-md-up display-4">Awesome Bootstrap Sites!</h1>
-                <h2 class="hidden-md-up">Dễ dàng triển khai và sử dụng</h2>
-                <p class="lead">Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.</p>
+        <section class="main-carousel-container">
+          <div class="owl-carousel owl-theme main-carousel">
+            <div class="banner-box">
+              <figure><img class="img-fluid" src="./img/home-banner-01.png" alt=""></figure>
+              <figcaption class="banner-title">
+                <h1>Chúng tôi là Fullstack Vietnam</h1>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus neque qui consequuntur illum nihil.</h4>
+              </figcaption>
+            </div>
+            <div class="banner-box">
+              <figure><img class="img-fluid" src="./img/home-banner-01.png" alt=""></figure>
+              <figcaption class="banner-title">
+                <h1>Chúng tôi là Fullstack Vietnam</h1>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus neque qui consequuntur illum nihil.</h4>
+              </figcaption>
+            </div>
+            <div class="banner-box">
+              <figure><img class="img-fluid" src="./img/home-banner-01.png" alt=""></figure>
+              <figcaption class="banner-title">
+                <h1>Chúng tôi là Fullstack Vietnam</h1>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus neque qui consequuntur illum nihil.</h4>
+              </figcaption>
+            </div>
+          </div>
+        </section>
+        <section class="main-content-container container-fluid">
+          <div class="main-title">
+            <h1>Fullstack <span>chuyên nghiệp</span></h1>
+          </div>
+          <div class="main-content-box container">
+            <div class="row content-row">
+              <div class="col-4">
+                <div class="course-box">
+                  <figure class="pic-box"><img class="img-fluid course-pic" src="./img/hone-service-01.png" alt=""><img class="img-fluid eye-focus" src="./img/eye.png" alt=""></figure>
+                  <figcaption class="course-description">
+                    <h6 class="course-title">Trung tâm đào tạo IT chuyên nghiệp</h6>
+                    <date>26/08/2018</date>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium porro quae, sapiente officia...</p>
+                  </figcaption>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="course-box">
+                  <figure class="pic-box"><img class="img-fluid course-pic" src="./img/hone-service-02.png" alt=""><img class="img-fluid eye-focus" src="./img/eye.png" alt=""></figure>
+                  <figcaption class="course-description">
+                    <h6 class="course-title">Trung tâm đào tạo IT chuyên nghiệp</h6>
+                    <date>26/08/2018</date>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium porro quae, sapiente officia...</p>
+                  </figcaption>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="course-box">
+                  <figure class="pic-box"><img class="img-fluid course-pic" src="./img/hone-service-03.png" alt=""><img class="img-fluid eye-focus" src="./img/eye.png" alt=""></figure>
+                  <figcaption class="course-description">
+                    <h6 class="course-title">Trung tâm đào tạo IT chuyên nghiệp</h6>
+                    <date>26/08/2018</date>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium porro quae, sapiente officia...</p>
+                  </figcaption>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="customers-container container">
+          <div class="owl-carousel owl-theme customers-carousel">
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-01.png" alt=""></div>
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-02.png" alt=""></div>
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-03.png" alt=""></div>
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-04.png" alt=""></div>
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-05.png" alt=""></div>
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-06.png" alt=""></div>
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-05.png" alt=""></div>
+            <div class="customer-box"><img class="img-fluid" src="./img/home-company2-logo-06.png" alt=""></div>
+          </div>
+        </section>
       </section>
     </main><!-- ////////////// End Main ////////////// -->
 <!-- ////////////// Footer ////////////// -->
