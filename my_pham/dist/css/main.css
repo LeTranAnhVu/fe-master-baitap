@@ -6457,27 +6457,28 @@ body .home {
           margin-top: 5%; }
           body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .product-box .row .col-md-5.col-6 .product-pic-box .product-pic {
             padding: 2vw; }
-      body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav button[class*="owl-"] {
-        position: absolute;
-        width: 3rem;
-        height: 3rem;
-        padding: 0;
-        margin: 0;
-        border-radius: 50%; }
-        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav button[class*="owl-"] .fa {
-          font-size: 2.5rem;
-          color: #baabab; }
-      body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-prev {
-        top: 50%;
-        transform: translateY(-50%);
-        left: 2%; }
-        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-prev .fa {
-          margin-right: 5%; }
-      body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-next {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 2%; }
-        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-next .fa {
-          margin-left: 5%; }
+      @media (min-width: 768px) {
+        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav button[class*="owl-"] {
+          position: absolute;
+          width: 3rem;
+          height: 3rem;
+          padding: 0;
+          margin: 0;
+          border-radius: 50%; }
+          body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav button[class*="owl-"] .fa {
+            font-size: 2.5rem;
+            color: #baabab; }
+        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-prev {
+          top: 50%;
+          transform: translateY(-50%);
+          left: 2%; }
+          body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-prev .fa {
+            margin-right: 5%; }
+        body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-next {
+          top: 50%;
+          transform: translateY(-50%);
+          right: 2%; }
+          body .home section.best-seller-container .inner-best-seller-container .best-seller-carousel .owl-nav .owl-next .fa {
+            margin-left: 5%; } }
 
 /*# sourceMappingURL=main.css.map */

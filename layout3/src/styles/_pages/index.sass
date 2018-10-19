@@ -1,0 +1,65 @@
+body
+	background: #dfdfdf
+
+
+header
+	.h3
+		color: purple
+		margin-bottom: 2rem
+		position: relative
+		&:before
+			display: block
+			content: ""
+			width: 20px
+			height: 20px
+			background: red
+			position: absolute
+			border-radius: 50%
+			left: 45%
+			transform: translateX(-50%)
+			bottom: -23px
+		&:after
+			display: block
+			content: ""
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			background: purple
+			position: absolute
+			left: 45%
+			transform: translateX(-50%)
+			bottom: -48px
+			z-index: -1
+		span
+			&:before
+				display: block
+				content: ""
+				width: 100px
+				height: 10px
+				background: yellow
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -30px
+				border-radius: 0 5px 5px 0 
+		
+			
+		
+
+
+.home
+	.item
+		margin-top: 3rem
+		// pc
+		&:first-child
+			margin-top: 0
+		+media-breakpoint-up(sm)
+			&:first-child
+				margin-top: 3rem
+		figure
+			.img-box
+				border-radius: 10px
+				overflow: hidden
+		
+
+		

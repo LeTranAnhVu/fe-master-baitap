@@ -6314,13 +6314,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
   height: 100%;
-  width: 100%; }
-
-@media print {
-  .container {
-    width: auto; } }
+  width: 100%;
+  background: white;
+  font-size: 8px; }
+  @media (min-width: 576px) {
+    html, body {
+      font-size: 10px; } }
+  @media (min-width: 768px) {
+    html, body {
+      font-size: 14px; } }
 
 header {
   background: white; }
@@ -6333,15 +6336,66 @@ header {
 .navbar-nav .nav-item.myactive .nav-link {
   color: purple; }
 
-html, body {
-  background: white;
-  font-size: 8px; }
-  @media (min-width: 576px) {
-    html, body {
-      font-size: 10px; } }
-  @media (min-width: 768px) {
-    html, body {
-      font-size: 14px; } }
+.footer section.contact-point-container {
+  margin-top: 10px;
+  padding: 0;
+  color: #ffffff9c;
+  font-size: 0.9rem;
+  background: #0c9289; }
+  .footer section.contact-point-container .row {
+    margin: 0; }
+    .footer section.contact-point-container .row .contact-col {
+      padding: 0;
+      padding-right: 5px; }
+      .footer section.contact-point-container .row .contact-col .contact-box {
+        margin-top: 20px; }
+        .footer section.contact-point-container .row .contact-col .contact-box h5 {
+          color: #0e0e6f;
+          font-weight: bold; }
+    .footer section.contact-point-container .row .links-col {
+      padding: 0; }
+      .footer section.contact-point-container .row .links-col .link-box .row-01 .col {
+        padding: 0 5px; }
+        .footer section.contact-point-container .row .links-col .link-box .row-01 .col .link-title-box {
+          color: #0e0e6f;
+          font-weight: bold;
+          margin-top: 20px; }
+      .footer section.contact-point-container .row .links-col .link-box .row-02 .col-6 {
+        padding: 0 0 0 5px; }
+        .footer section.contact-point-container .row .links-col .link-box .row-02 .col-6 ul {
+          padding: 0; }
+          .footer section.contact-point-container .row .links-col .link-box .row-02 .col-6 ul .link {
+            list-style: none;
+            position: relative; }
+            .footer section.contact-point-container .row .links-col .link-box .row-02 .col-6 ul .link a {
+              color: #ffffff9c; }
+            .footer section.contact-point-container .row .links-col .link-box .row-02 .col-6 ul .link:before {
+              font-family: FontAwesome;
+              content: "\f061";
+              font-style: normal;
+              font-weight: normal;
+              margin-right: 2px; }
+
+.footer section.copyright-container {
+  background: blue;
+  line-height: 30px; }
+  .footer section.copyright-container .container .row {
+    vertical-align: middle; }
+    .footer section.copyright-container .container .row .col-8 .box p {
+      color: white;
+      margin-bottom: 0; }
+      .footer section.copyright-container .container .row .col-8 .box p a {
+        color: white; }
+    .footer section.copyright-container .container .row .col-1 {
+      padding: 5px; }
+
+@media (min-width: 768px) {
+  .footer .contact-point-container {
+    margin-top: 40px; } }
+
+@media print {
+  .container {
+    width: auto; } }
 
 section.home section.main-carousel-container {
   width: 100%; }
