@@ -52,8 +52,8 @@ $(document).ready(function () {
 			},
 			540: {
 				items: 5,
-				nav: false,
-				dots: true
+				dots: true,
+				nav: false
 			},
 			720: {
 				items: 5,

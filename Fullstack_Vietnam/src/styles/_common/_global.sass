@@ -19,9 +19,33 @@ header
 		margin-left : 1rem
 		.nav-link
 			font-size: 1.5rem
+	
+	.nav-item
+		.nav-link
+			text-align: center
+			color: grey
+			display: block
+			position: relative
+			+media-breakpoint-up(lg)
+				&:before
+					content: ""
+					display: block
+					height: 10px
+					width: 100%
+					left: 50%
+					transform: translateX(-50%)
+					background: $maincolor
+					position: absolute
+					top: -18px
+					opacity: 0
+				&:hover
+					color: $maincolor
+					&:before
+						opacity: 1
 	.nav-item.myactive
 		.nav-link
 			color: $maincolor
+
 
 //  fa-arrow-left"\f060"
 //  fa-arrow-right"\f061"
@@ -88,8 +112,29 @@ $footerBackground: #171785
 							margin-bottom: 0
 							a
 								color: white
-				.col-1
+				.col-4
 					padding: 5px
+					.social-box
+						display: flex
+						flex-direction: row-reverse 
+						.social-btn
+							display: block
+							margin: 0 3px
+							height: 20px
+							width: 20px
+							opacity: 0.5
+							border-radius: 50%
+							border: none
+							&:hover
+								opacity: 1
+
+						.facebook-btn
+							background: white url("../../img/facebook.png") no-repeat center center
+							background-size: 30%
+						.twitter-btn
+							background: white url("../../img/twitter.png") no-repeat center center 
+							background-size: 40%
+					
 
 // pc
 .footer
@@ -98,3 +143,22 @@ $footerBackground: #171785
 			margin-top: 40px
 		section.copyright-container
 			height: 50px
+			.container
+				.row
+					.col-4
+						padding: 5px
+						.social-box
+							.social-btn
+								margin: 0 5px
+								height: 30px
+								width: 30px
+								opacity: 0.5
+								border-radius: 50%
+								border: none
+								&:hover
+									opacity: 1
+
+							.facebook-btn
+								background-size: 30%
+							.twitter-btn
+								background-size: 40%
