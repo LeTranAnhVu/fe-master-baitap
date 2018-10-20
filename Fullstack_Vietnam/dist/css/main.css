@@ -6377,21 +6377,26 @@ header {
               margin-right: 2px; }
 
 .footer section.copyright-container {
-  background: blue;
-  line-height: 30px; }
-  .footer section.copyright-container .container .row {
-    vertical-align: middle; }
-    .footer section.copyright-container .container .row .col-8 .box p {
-      color: white;
-      margin-bottom: 0; }
-      .footer section.copyright-container .container .row .col-8 .box p a {
-        color: white; }
-    .footer section.copyright-container .container .row .col-1 {
-      padding: 5px; }
+  background: #171785;
+  height: 30px; }
+  .footer section.copyright-container .container {
+    height: 100%; }
+    .footer section.copyright-container .container .row {
+      height: 100%;
+      align-items: center; }
+      .footer section.copyright-container .container .row .col-8 .box p {
+        color: white;
+        margin-bottom: 0; }
+        .footer section.copyright-container .container .row .col-8 .box p a {
+          color: white; }
+      .footer section.copyright-container .container .row .col-1 {
+        padding: 5px; }
 
 @media (min-width: 768px) {
-  .footer .contact-point-container {
-    margin-top: 40px; } }
+  .footer section.contact-point-container {
+    margin-top: 40px; }
+  .footer section.copyright-container {
+    height: 50px; } }
 
 @media print {
   .container {

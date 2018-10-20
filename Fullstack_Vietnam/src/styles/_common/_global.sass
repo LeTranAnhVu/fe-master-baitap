@@ -27,6 +27,7 @@ header
 //  fa-arrow-right"\f061"
 // footer section
 $footerColor: #ffffff9c
+$footerBackground: #171785
 // mobile
 .footer
 	section.contact-point-container
@@ -73,11 +74,13 @@ $footerColor: #ffffff9c
 										font-weight: normal
 										margin-right: 2px
 	section.copyright-container
-		background: blue
-		line-height: 30px
+		background: $footerBackground
+		height: 30px
 		.container
+			height: 100%
 			.row
-				vertical-align: middle
+				height: 100%
+				align-items: center
 				.col-8
 					.box
 						p
@@ -90,6 +93,8 @@ $footerColor: #ffffff9c
 
 // pc
 .footer
-	.contact-point-container
-		+media-breakpoint-up(md)
+	+media-breakpoint-up(md)
+		section.contact-point-container
 			margin-top: 40px
+		section.copyright-container
+			height: 50px
