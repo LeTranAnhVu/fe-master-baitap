@@ -6427,10 +6427,10 @@ header {
             .footer section.copyright-container .container .row .col-4 .social-box .social-btn:hover {
               opacity: 1; }
           .footer section.copyright-container .container .row .col-4 .social-box .facebook-btn {
-            background: white url("../../img/facebook.png") no-repeat center center;
+            background: white url("../img/facebook.png") no-repeat center center;
             background-size: 30%; }
           .footer section.copyright-container .container .row .col-4 .social-box .twitter-btn {
-            background: white url("../../img/twitter.png") no-repeat center center;
+            background: white url("../img/twitter.png") no-repeat center center;
             background-size: 40%; }
 
 @media (min-width: 768px) {
