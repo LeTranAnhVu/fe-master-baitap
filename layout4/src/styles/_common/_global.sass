@@ -1,0 +1,95 @@
+$maincolor: purple
+html, body
+	font-family: 'Roboto', sans-serif
+	height: 100%
+	width: 100%
+	background: white
+	+media-breakpoint-up(xs)
+		font-size: 8px
+	+media-breakpoint-up(sm)
+		font-size: 10px
+	+media-breakpoint-up(md)
+		font-size: 14px
+
+// header section
+header
+	background: white
+.navbar-nav
+	.nav-item
+		margin-left : 1rem
+		.nav-link
+			font-size: 1.5rem
+	.nav-item.myactive
+		.nav-link
+			color: $maincolor
+
+//  fa-arrow-left"\f060"
+//  fa-arrow-right"\f061"
+// footer section
+$footerColor: #ffffff9c
+// mobile
+.footer
+	section.contact-point-container
+		margin-top: 10px
+		padding: 0
+		color: $footerColor
+		font-size: 0.9rem
+		background: #0c9289
+		.row
+			margin: 0
+			.contact-col
+				padding: 0
+				padding-right: 5px
+				.contact-box
+					margin-top: 20px
+					h5
+						color: #0e0e6f
+						font-weight: bold
+			.links-col
+				padding: 0
+				// padding-right: 10px
+				.link-box
+					.row-01
+						.col
+							padding: 0 5px
+							.link-title-box
+								color: #0e0e6f
+								font-weight: bold
+								margin-top: 20px
+					.row-02
+						.col-6
+							padding: 0 0 0 5px
+							ul
+								padding: 0
+								.link
+									list-style: none
+									position: relative
+									a
+										color: $footerColor
+									&:before
+										font-family: FontAwesome
+										content: "\f061"
+										font-style: normal
+										font-weight: normal
+										margin-right: 2px
+	section.copyright-container
+		background: blue
+		line-height: 30px
+		.container
+			.row
+				vertical-align: middle
+				.col-8
+					.box
+						p
+							color: white
+							margin-bottom: 0
+							a
+								color: white
+				.col-1
+					padding: 5px
+
+// pc
+.footer
+	.contact-point-container
+		+media-breakpoint-up(md)
+			margin-top: 40px

@@ -1,0 +1,57 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home
+		section.main-carousel-container
+			.owl-carousel.owl-theme.main-carousel
+				.banner-box
+					figure
+						img.img-fluid(src="./img/home-main-slider-01.png", alt="")
+						figcaption.banner-title
+							h1 Chúng tôi là Fullstack Vietnam
+							h4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus neque qui consequuntur illum nihil.
+				.banner-box
+					figure
+						img.img-fluid(src="./img/home-main-slider-01.png", alt="")
+						figcaption.banner-title
+							h1 Chúng tôi là Fullstack Vietnam
+							h4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus neque qui consequuntur illum nihil.
+		section.news-container.container
+			.row
+				.col-md-4.item
+					.box
+						figure
+							img.img-fluid(src="./img/home-service-01.png", alt="")
+					figcaption
+						h6 Can ho Phu My Hung
+						date 27/06/2018
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde suscipit consequuntur sunt ducimus accusamus neque, illum mollitia recusandae, nesciunt tenetur ex. Quibusdam, earum exercitationem adipisci nesciunt vero voluptas ipsa.
+
+				.col-md-4.item
+					.box
+						figure
+							img.img-fluid(src="./img/home-service-01.png", alt="")
+					figcaption
+						h6 Can ho Phu My Hung
+						date 27/06/2018
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde suscipit consequuntur sunt ducimus accusamus neque, illum mollitia recusandae, nesciunt tenetur ex. Quibusdam, earum exercitationem adipisci nesciunt vero voluptas ipsa.
+
+				.col-md-4.item
+					.box
+						figure
+							img.img-fluid(src="./img/home-service-01.png", alt="")
+					figcaption
+						h6 Can ho Phu My Hung
+						date 27/06/2018
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde suscipit consequuntur sunt ducimus accusamus neque, illum mollitia recusandae, nesciunt tenetur ex. Quibusdam, earum exercitationem adipisci nesciunt vero voluptas ipsa.
+
+
+
+
+
+
