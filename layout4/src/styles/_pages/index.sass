@@ -1,10 +1,12 @@
 // color
 $maincolor: purple
+$main-background: white
 section.home
 	section.main-carousel-container
 		width: 100%
 		// mobile
 		.main-carousel
+			position: relative
 			figure
 				figcaption
 					padding: 10px
@@ -12,9 +14,13 @@ section.home
 				margin: 0
 				.owl-next,
 				.owl-prev
+					margin: 0 10px
 					span
-						background: aqua
-						padding: 1rem
+						border-radius: 5px
+						background: cyan
+						padding: .5rem 3rem
+						font-size: 1.5rem
+						display: block
 			// tablet
 			+media-breakpoint-up(md)
 				figure
@@ -29,28 +35,91 @@ section.home
 						background: linear-gradient(0deg,#000000b5, #ffffff00)
 						// opacity: .5
 				.owl-nav
-					// margin: 0
-					.owl-next,
-					.owl-prev
+					position: static
+					[class*="owl"]
+						position: absolute
+						top: 50%
+						transform: translateY(-50%)
+						// height: auto
+						// width: auto
+						text-align: center
 						span
-							background: aqua
-							padding: 1rem
+							background: #9e9e9e63
+							opacity: 0.5
+							padding: 0 1rem
+							font-size: 2rem
+							display: block
+						&:hover
+							span
+								opacity: 1
+					.owl-next
+						right: 5px
+					.owl-prev
+						left: 5px
 	section.news-container
-		.row
+		background: $main-background
+		.news-title
+			margin: 30px auto
+			text-align: center
+			position: relative
+			h1
+				font-size: 3rem
+				text-transform: uppercase
+				&:before
+					content: ""
+					display: block
+					width: 100px
+					height: 3px
+					background: #2196f3
+					position: absolute
+					top: 35px
+					left: 50%
+					transform: translateX(-50%)
+			&:before
+				content: ""
+				display: block
+				width: 15px
+				height: 15px
+				border-radius: 50%
+				background: #2196f3
+				position: absolute
+				top: 30px
+				left: 50%
+				transform: translateX(-50%)
+			&:after
+				content: ""
+				display: block
+				width: 9px
+				height: 9px
+				border-radius: 50%
+				background: $main-background
+				position: absolute
+				top: 33px
+				left: 50%
+				transform: translateX(-50%)
+
+		.news-box
 			[class*="col-"]
 				margin-top: 20px
 			&:first-child
-				margin-top: 30px
+				margin-top: 20px
 			.item
 				.box
 					figure
 						img
 							width: 100%
 				figcaption
+					//mobile
+					font-size: 1.5rem
+					padding: 0 5px
+					//tablet
+					+media-breakpoint-up(md)
+						font-size: .8rem
+						padding: 0
 					h6
-						font-size: 1.5rem
+						font-size: 1.5em
 					p
-						font-size: 1rem
+						font-size: 1em
 						display: -webkit-box
 						-webkit-line-clamp: 3
 						-webkit-box-orient: vertical
