@@ -34,6 +34,11 @@ section.home
 						color: white
 						background: linear-gradient(0deg,#000000b5, #ffffff00)
 						// opacity: .5
+						font-size: 1.2rem
+						h1
+							font-size: 1.5em
+						h4
+							font-size: 1em
 				.owl-nav
 					position: static
 					[class*="owl"]
@@ -56,8 +61,14 @@ section.home
 						right: 5px
 					.owl-prev
 						left: 5px
+			// pc
+			+media-breakpoint-up(lg)
+				figure
+					figcaption
+						font-size: 1.5rem
 	section.news-container
 		background: $main-background
+		margin-bottom: 40px
 		.news-title
 			margin: 30px auto
 			text-align: center
@@ -66,9 +77,10 @@ section.home
 				font-size: 3rem
 				text-transform: uppercase
 				&:before
+					// bar
 					content: ""
 					display: block
-					width: 100px
+					width: 70px
 					height: 3px
 					background: #2196f3
 					position: absolute
@@ -76,6 +88,7 @@ section.home
 					left: 50%
 					transform: translateX(-50%)
 			&:before
+				// big circle
 				content: ""
 				display: block
 				width: 15px
@@ -87,6 +100,7 @@ section.home
 				left: 50%
 				transform: translateX(-50%)
 			&:after
+				// small circle
 				content: ""
 				display: block
 				width: 9px
@@ -97,6 +111,20 @@ section.home
 				top: 33px
 				left: 50%
 				transform: translateX(-50%)
+			// tablet
+			+media-breakpoint-up(md)
+				h1
+					font-size: 2.5rem
+					&:before
+						// bar
+						width: 120px
+						top: 45px
+				&:before
+					// big circle
+					top: 39px
+				&:after
+					// small circle
+					top: 42px
 
 		.news-box
 			[class*="col-"]
@@ -152,3 +180,6 @@ section.home
 								box-shadow: 0 0 0 3px aqua inset
 				
 
+	section.orientation-container
+		background: grey url("../img/home-background-03.png") no-repeat center center 
+		height: 400px
