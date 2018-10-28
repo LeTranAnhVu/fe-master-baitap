@@ -6399,8 +6399,12 @@ header {
 
 .own-justify-content-center {
   display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.own-flex-row {
+  flex-direction: row; }
 
 .own-nav-item-active {
   background: #00cccc;
@@ -6801,5 +6805,92 @@ section.home section.project-plan-container .container .project-plan-box {
         box-shadow: 0 0 0 4px #00cccc inset; }
       section.home section.project-plan-container .container .project-plan-box .project-row .item .img-box:active img, section.home section.project-plan-container .container .project-plan-box .project-row .item .img-box:hover img {
         filter: grayscale(0%); }
+
+section.home section.customer-feedback-container {
+  background: grey url("../img/home-background-03.png");
+  background-size: cover;
+  min-height: 300px;
+  padding: 0; }
+  section.home section.customer-feedback-container .customer-feedback-box {
+    padding: 40px 0; }
+    @media (min-width: 992px) {
+      section.home section.customer-feedback-container .customer-feedback-box {
+        padding: 80px 0; } }
+    section.home section.customer-feedback-container .customer-feedback-box .title {
+      padding-bottom: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative; }
+      section.home section.customer-feedback-container .customer-feedback-box .title h1 {
+        font-weight: 900;
+        position: relative; }
+        section.home section.customer-feedback-container .customer-feedback-box .title h1:before {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 3px;
+          background: #00cccc;
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          transform: translateX(-50%); }
+      section.home section.customer-feedback-container .customer-feedback-box .title:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #00cccc;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%); }
+      section.home section.customer-feedback-container .customer-feedback-box .title:after {
+        content: "";
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        top: 38px;
+        left: 50%;
+        transform: translateX(-50%); }
+      @media (min-width: 768px) {
+        section.home section.customer-feedback-container .customer-feedback-box .title h1:before {
+          top: 45px; }
+        section.home section.customer-feedback-container .customer-feedback-box .title:before {
+          top: 39px; }
+        section.home section.customer-feedback-container .customer-feedback-box .title:after {
+          top: 42px; } }
+    section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figure {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 3px solid #00cccc; }
+    section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figcaption {
+      padding: 0 15%;
+      text-align: center;
+      font-size: 1rem;
+      color: #736e6e; }
+      section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figcaption .feedback {
+        font-size: inherit; }
+        section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figcaption .feedback p {
+          font-size: 1.2em; }
+      section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figcaption .customer-info .name {
+        color: #00cccc; }
+    @media (min-width: 768px) {
+      section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figure {
+        width: 130px;
+        height: 130px; }
+      section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figcaption {
+        padding: 0 20%; } }
+    @media (min-width: 992px) {
+      section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figure {
+        width: 200px;
+        height: 200px; }
+      section.home section.customer-feedback-container .customer-feedback-box .customer-feedback-carousel .customer-feedback figcaption {
+        padding: 0 30%; } }
 
 /*# sourceMappingURL=main.css.map */

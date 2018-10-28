@@ -11,6 +11,13 @@ $(document).ready(function(){
 		nav: true,
 		dots: false
 	});
+	$('.customer-feedback-carousel').owlCarousel({
+		items: 1,
+		loop: true,
+		// autoplay: true,
+		autoplayTimeout: 5000,
+		dots: true
+	});
 	// $('.customers-carousel').owlCarousel({
 	// 	loop: true,
 	// 	responsiveClass: true,
