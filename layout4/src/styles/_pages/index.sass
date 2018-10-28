@@ -1,6 +1,18 @@
 // color
 $maincolor: purple
 $main-background: white
+$emphasize-color: darken(aqua,10%)
+.own-justify-content-center
+	display: flex
+	flex-direction: row
+	justify-content: center
+.own-nav-item-active
+	background: $emphasize-color
+	color: white !important
+.own-full-width
+	width: 100%
+.own-monocolor
+	filter: grayscale(100%)
 section.home
 	section.main-carousel-container
 		width: 100%
@@ -83,7 +95,7 @@ section.home
 					display: block
 					width: 70px
 					height: 3px
-					background: #2196f3
+					background: $emphasize-color
 					position: absolute
 					top: 35px
 					left: 50%
@@ -95,7 +107,7 @@ section.home
 				width: 15px
 				height: 15px
 				border-radius: 50%
-				background: #2196f3
+				background: $emphasize-color
 				position: absolute
 				top: 30px
 				left: 50%
@@ -212,8 +224,56 @@ section.home
 			.orientation-title
 				text-align: center
 				padding: 30px 0 
+				position: relative
 				h1
 					text-transform: uppercase
+					font-weight: 900
+					position: relative
+					&:before
+						// bar
+						content: ""
+						display: block
+						width: 100px
+						height: 3px
+						background: $emphasize-color
+						position: absolute
+						top: 40px
+						left: 50%
+						transform: translateX(-50%)
+				&:before
+					// big circle
+					content: ""
+					display: block
+					width: 15px
+					height: 15px
+					border-radius: 50%
+					background: $emphasize-color
+					position: absolute
+					top: 63px
+					left: 50%
+					transform: translateX(-50%)
+				&:after
+					// small circle
+					content: ""
+					display: block
+					width: 9px
+					height: 9px
+					border-radius: 50%
+					background: $main-background
+					position: absolute
+					top: 66px
+					left: 50%
+					transform: translateX(-50%)
+				// tablet
+				+media-breakpoint-up(md)
+					h1
+						// bar
+						&:before
+							top: 45px
+					&:before
+						top: 68px
+					&:after
+						top: 71px
 			// mobile
 			.orientation-row
 				.item
@@ -221,11 +281,12 @@ section.home
 					.row
 						font-size: 1.5rem
 						[class*="col-"]
-							margin-top: 5px
+							margin-top: 10px
 						.title-col
 							.title
 								h5
-									font-size: 1.5em
+									text-transform: uppercase
+									font-size: 1.2em
 						.content-col
 								.content-list
 									li
@@ -240,6 +301,15 @@ section.home
 							.content-list
 								padding: 0
 								list-style: none
+					&:active
+						.row
+							[class*="col-"]
+								.box-img,
+								.title
+									color: $emphasize-color
+				//only mobile
+				+media-breakpoint-only(xs)
+					text-align: center
 				// tablet
 				+media-breakpoint-up(md)
 					.item
@@ -247,7 +317,7 @@ section.home
 						.row
 							font-size: 1.2rem
 							[class*="col-"]
-								margin-top: 10px
+								margin-top: 30px
 				// laptop
 				+media-breakpoint-up(lg)
 					.item
@@ -255,8 +325,150 @@ section.home
 						.row
 							font-size: 1.2rem
 							[class*="col-"]
-								margin-top: 10px
-				// pc
-				+media-breakpoint-up(xl)
+								margin-top: 30px
+						&:hover
+							.row
+								[class*="col-"]
+									.box-img,
+									.title
+										color: $emphasize-color
+				
+	section.break-middle-container
+		background: grey url('../img/home-background-02.png') no-repeat center center
+		background-size: cover
+		display: flex
+		justify-content: center
+		align-items: center
+		.content-box
+			margin: 50px 20px
+			text-align: center
+			.description
+				h3
+					color: white
+			.btn-more-detail
+				margin-top: 20px
+				width: 200px
+				height: 40px
+				background: $emphasize-color
+				border: none
+				border-radius: 20px
+				font-size: 1.5rem
+				text-transform: uppercase
+				color: white
+				&:hover,
+				&:active
+					background: #ffc107
+		//laptop
+		+media-breakpoint-up(lg)
+			.content-box
+				margin: 70px
+		// pc
+		+media-breakpoint-up(xl)
+			.content-box
+				margin: 100px 20%
+				.btn-more-detail
+					margin-top: 40px
+					width: 230px
+					height: 50px
+					border-radius: 25px
 
+
+	section.project-plan-container
+		.container
+			.project-plan-box
+				padding: 50px 0 
+				.title
+					padding-bottom: 30px
+					text-transform: uppercase
+					text-align: center
+					position: relative
+					h1
+						font-weight: 900
+						position: relative
+						&:before
+							// bar
+							content: ""
+							display: block
+							width: 100px
+							height: 3px
+							background: $emphasize-color
+							position: absolute
+							top: 40px
+							left: 50%
+							transform: translateX(-50%)
+					&:before
+						// big circle
+						content: ""
+						display: block
+						width: 15px
+						height: 15px
+						border-radius: 50%
+						background: $emphasize-color
+						position: absolute
+						top: 35px
+						left: 50%
+						transform: translateX(-50%)
+					&:after
+						// small circle
+						content: ""
+						display: block
+						width: 9px
+						height: 9px
+						border-radius: 50%
+						background: $main-background
+						position: absolute
+						top: 38px
+						left: 50%
+						transform: translateX(-50%)
+					+media-breakpoint-up(md)
+						// tablet
+						h1
+							// bar
+							&:before
+								top: 45px
+						&:before
+							top: 39px
+						&:after
+							top: 42px
+				
+				.project-plan-nav
+					.own-nav
+						padding: 0
+						.item.own-nav-item-active
+							border-radius: 10px
+						.item
+							list-style: none
+							padding: 0 10px
+							font-size: 1.5rem
+							color: black
+							a
+								color: inherit
+								text-transform: uppercase
+								font-size: 1em
+								font-weight: bold
+					+media-breakpoint-up(md)
+						.own-nav
+							.item
+								padding: 0 25px
+								font-size: 1.2rem
+					
+				.project-row
+					.item
+						margin-top: 20px
+						.img-box
+							position: relative
+							&:active,
+							&:hover
+								&:after
+									content: ""
+									display: block
+									position: absolute
+									top: 0
+									left: 0
+									width: 100%
+									height: 100%
+									box-shadow: 0 0 0 4px $emphasize-color inset
+								// xoa greyscale
+								img
+									filter: grayscale(0%)
 

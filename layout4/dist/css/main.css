@@ -6397,6 +6397,21 @@ header {
   .container {
     width: auto; } }
 
+.own-justify-content-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.own-nav-item-active {
+  background: #00cccc;
+  color: white !important; }
+
+.own-full-width {
+  width: 100%; }
+
+.own-monocolor {
+  filter: grayscale(100%); }
+
 section.home section.main-carousel-container {
   width: 100%; }
   section.home section.main-carousel-container .main-carousel {
@@ -6470,7 +6485,7 @@ section.home section.news-container {
         display: block;
         width: 70px;
         height: 3px;
-        background: #2196f3;
+        background: #00cccc;
         position: absolute;
         top: 35px;
         left: 50%;
@@ -6481,7 +6496,7 @@ section.home section.news-container {
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      background: #2196f3;
+      background: #00cccc;
       position: absolute;
       top: 30px;
       left: 50%;
@@ -6580,17 +6595,60 @@ section.home section.orientation-container {
   background-size: cover; }
   section.home section.orientation-container .container .orientation-title {
     text-align: center;
-    padding: 30px 0; }
+    padding: 30px 0;
+    position: relative; }
     section.home section.orientation-container .container .orientation-title h1 {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 900;
+      position: relative; }
+      section.home section.orientation-container .container .orientation-title h1:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: #00cccc;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%); }
+    section.home section.orientation-container .container .orientation-title:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #00cccc;
+      position: absolute;
+      top: 63px;
+      left: 50%;
+      transform: translateX(-50%); }
+    section.home section.orientation-container .container .orientation-title:after {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 66px;
+      left: 50%;
+      transform: translateX(-50%); }
+    @media (min-width: 768px) {
+      section.home section.orientation-container .container .orientation-title h1:before {
+        top: 45px; }
+      section.home section.orientation-container .container .orientation-title:before {
+        top: 68px; }
+      section.home section.orientation-container .container .orientation-title:after {
+        top: 71px; } }
   section.home section.orientation-container .container .orientation-row .item {
     margin-top: 20px; }
     section.home section.orientation-container .container .orientation-row .item .row {
       font-size: 1.5rem; }
       section.home section.orientation-container .container .orientation-row .item .row [class*="col-"] {
-        margin-top: 5px; }
+        margin-top: 10px; }
       section.home section.orientation-container .container .orientation-row .item .row .title-col .title h5 {
-        font-size: 1.5em; }
+        text-transform: uppercase;
+        font-size: 1.2em; }
       section.home section.orientation-container .container .orientation-row .item .row .content-col .content-list li {
         font-size: 1em; }
         section.home section.orientation-container .container .orientation-row .item .row .content-col .content-list li:before {
@@ -6602,19 +6660,146 @@ section.home section.orientation-container {
       section.home section.orientation-container .container .orientation-row .item .row .content-col .content-list {
         padding: 0;
         list-style: none; }
+    section.home section.orientation-container .container .orientation-row .item:active .row [class*="col-"] .box-img,
+    section.home section.orientation-container .container .orientation-row .item:active .row [class*="col-"] .title {
+      color: #00cccc; }
+  @media (max-width: 575.98px) {
+    section.home section.orientation-container .container .orientation-row {
+      text-align: center; } }
   @media (min-width: 768px) {
     section.home section.orientation-container .container .orientation-row .item {
       margin-top: 20px; }
       section.home section.orientation-container .container .orientation-row .item .row {
         font-size: 1.2rem; }
         section.home section.orientation-container .container .orientation-row .item .row [class*="col-"] {
-          margin-top: 10px; } }
+          margin-top: 30px; } }
   @media (min-width: 992px) {
     section.home section.orientation-container .container .orientation-row .item {
       margin-top: 10px; }
       section.home section.orientation-container .container .orientation-row .item .row {
         font-size: 1.2rem; }
         section.home section.orientation-container .container .orientation-row .item .row [class*="col-"] {
-          margin-top: 10px; } }
+          margin-top: 30px; }
+      section.home section.orientation-container .container .orientation-row .item:hover .row [class*="col-"] .box-img,
+      section.home section.orientation-container .container .orientation-row .item:hover .row [class*="col-"] .title {
+        color: #00cccc; } }
+
+section.home section.break-middle-container {
+  background: grey url("../img/home-background-02.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section.home section.break-middle-container .content-box {
+    margin: 50px 20px;
+    text-align: center; }
+    section.home section.break-middle-container .content-box .description h3 {
+      color: white; }
+    section.home section.break-middle-container .content-box .btn-more-detail {
+      margin-top: 20px;
+      width: 200px;
+      height: 40px;
+      background: #00cccc;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: white; }
+      section.home section.break-middle-container .content-box .btn-more-detail:hover, section.home section.break-middle-container .content-box .btn-more-detail:active {
+        background: #ffc107; }
+  @media (min-width: 992px) {
+    section.home section.break-middle-container .content-box {
+      margin: 70px; } }
+  @media (min-width: 1200px) {
+    section.home section.break-middle-container .content-box {
+      margin: 100px 20%; }
+      section.home section.break-middle-container .content-box .btn-more-detail {
+        margin-top: 40px;
+        width: 230px;
+        height: 50px;
+        border-radius: 25px; } }
+
+section.home section.project-plan-container .container .project-plan-box {
+  padding: 50px 0; }
+  section.home section.project-plan-container .container .project-plan-box .title {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative; }
+    section.home section.project-plan-container .container .project-plan-box .title h1 {
+      font-weight: 900;
+      position: relative; }
+      section.home section.project-plan-container .container .project-plan-box .title h1:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: #00cccc;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%); }
+    section.home section.project-plan-container .container .project-plan-box .title:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #00cccc;
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%); }
+    section.home section.project-plan-container .container .project-plan-box .title:after {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 38px;
+      left: 50%;
+      transform: translateX(-50%); }
+    @media (min-width: 768px) {
+      section.home section.project-plan-container .container .project-plan-box .title h1:before {
+        top: 45px; }
+      section.home section.project-plan-container .container .project-plan-box .title:before {
+        top: 39px; }
+      section.home section.project-plan-container .container .project-plan-box .title:after {
+        top: 42px; } }
+  section.home section.project-plan-container .container .project-plan-box .project-plan-nav .own-nav {
+    padding: 0; }
+    section.home section.project-plan-container .container .project-plan-box .project-plan-nav .own-nav .item.own-nav-item-active {
+      border-radius: 10px; }
+    section.home section.project-plan-container .container .project-plan-box .project-plan-nav .own-nav .item {
+      list-style: none;
+      padding: 0 10px;
+      font-size: 1.5rem;
+      color: black; }
+      section.home section.project-plan-container .container .project-plan-box .project-plan-nav .own-nav .item a {
+        color: inherit;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: bold; }
+  @media (min-width: 768px) {
+    section.home section.project-plan-container .container .project-plan-box .project-plan-nav .own-nav .item {
+      padding: 0 25px;
+      font-size: 1.2rem; } }
+  section.home section.project-plan-container .container .project-plan-box .project-row .item {
+    margin-top: 20px; }
+    section.home section.project-plan-container .container .project-plan-box .project-row .item .img-box {
+      position: relative; }
+      section.home section.project-plan-container .container .project-plan-box .project-row .item .img-box:active:after, section.home section.project-plan-container .container .project-plan-box .project-row .item .img-box:hover:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 0 4px #00cccc inset; }
+      section.home section.project-plan-container .container .project-plan-box .project-row .item .img-box:active img, section.home section.project-plan-container .container .project-plan-box .project-row .item .img-box:hover img {
+        filter: grayscale(0%); }
 
 /*# sourceMappingURL=main.css.map */
