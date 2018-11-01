@@ -35,3 +35,16 @@ và
 # Tạo Favicon
 
 https://www.favicon-generator.org/
+
+
+# Experience
+
+## mobile - active pseodo class - unstable fixed
+
+> in main.js add:
+
+```javasript
+
+document.addEventListener("touchstart", function() {},false);
+
+```

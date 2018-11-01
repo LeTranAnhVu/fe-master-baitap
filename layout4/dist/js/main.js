@@ -35,6 +35,7 @@ $(function () {
 console.log('FullStack Vietnam!');
 
 $(document).ready(function () {
+				document.addEventListener("touchstart", function () {}, false);
 				$('.main-carousel').owlCarousel({
 								items: 1,
 								loop: true,
