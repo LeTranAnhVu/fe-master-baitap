@@ -1,4 +1,5 @@
 $maincolor: purple
+
 html, body
 	font-family: 'Roboto', sans-serif
 	height: 100%
@@ -10,6 +11,13 @@ html, body
 		font-size: 10px
 	+media-breakpoint-up(md)
 		font-size: 14px
+
+
+=footer-title($mt: null)
+	text-transform: uppercase
+	color: $footer-blue
+	font-weight: bold
+	margin-top: $mt
 
 // header section
 header
@@ -27,38 +35,41 @@ header
 //  fa-arrow-right"\f061"
 // footer section
 $footerColor: #ffffff9c
-// mobile
+$footer-blue: #404088
+$footer-background: #0c9289
 .footer
+	// mobile
 	section.contact-point-container
 		margin-top: 10px
 		padding: 0
 		color: $footerColor
-		font-size: 0.9rem
-		background: #0c9289
-		.row
+		font-size: 1.5rem
+		background: $footer-background
+		.contact-point-row
 			margin: 0
-			.contact-col
+			&>[class*='col-']
 				padding: 0
+				margin-top: 20px
+			.contact-col
 				padding-right: 5px
 				.contact-box
-					margin-top: 20px
-					h5
-						color: #0e0e6f
-						font-weight: bold
+					p
+						margin-bottom: 0
+					.title
+						+footer-title
 			.links-col
-				padding: 0
 				// padding-right: 10px
 				.link-box
+					[class*='row']
+						margin: 0
 					.row-01
 						.col
-							padding: 0 5px
-							.link-title-box
-								color: #0e0e6f
-								font-weight: bold
-								margin-top: 20px
+							padding: 0
+							.title
+								+footer-title
 					.row-02
-						.col-6
-							padding: 0 0 0 5px
+						.col-sm-6
+							padding: 0
 							ul
 								padding: 0
 								.link
@@ -72,24 +83,94 @@ $footerColor: #ffffff9c
 										font-style: normal
 										font-weight: normal
 										margin-right: 2px
-	section.copyright-container
-		background: blue
-		line-height: 30px
-		.container
-			.row
-				vertical-align: middle
-				.col-8
-					.box
-						p
-							color: white
-							margin-bottom: 0
-							a
-								color: white
-				.col-1
-					padding: 5px
+			.email-col
+				margin-bottom: 20px
+				.title
+					+footer-title(10px)
+				.email-form
+					border: 2px $footer-blue solid
+					display: flex
+					width: 50%
 
-// pc
-.footer
-	.contact-point-container
+					input
+						background: $footer-blue
+						margin: 0
+						color: white
+						border: none
+						padding: 0
+						border-radius: 0
+						height: 25px
+						width: 75%
+						dis
+						&:placeholder
+							color: red
+					button
+						border: none
+						padding: 0
+						margin: 0
+						width: 25%
+						color: $footer-blue
+						height: 25px
+						background: lighten($footer-background,10%)
 		+media-breakpoint-up(md)
-			margin-top: 40px
+			font-size: 1rem
+		+media-breakpoint-up(lg)
+			font-size: .9rem
+			.contact-point-row
+				.email-col
+					.email-form
+						border: 2px $footer-blue solid
+						width: 90%
+		+media-breakpoint-up(xl)
+			font-size: 1rem
+			.contact-point-row
+				.email-col
+					.email-form
+						border: 2px $footer-blue solid
+						width: 90%
+
+
+
+
+
+
+	section.copyright-container
+		background: $footer-blue
+		.container
+			.copy-right-box
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				padding: 5px 0
+				p
+					margin-bottom: 0
+					color: white
+					a
+						color: yellow
+				.social-box
+					display: flex
+					margin-left: auto
+					text-align: center
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					i
+						background: white
+						display: block
+						padding: 8px
+						border-radius: 50%
+						width: 25px
+						height: 25px
+						margin: 0 5px
+						font-size: 1.5rem
+						position: relative
+						&:before
+							display: block
+							position: absolute
+							top: 50%
+							left: 50%
+							transform: translateX(-50%) translateY(-50%)
+					
+
+			

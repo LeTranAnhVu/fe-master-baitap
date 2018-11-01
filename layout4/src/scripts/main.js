@@ -22,30 +22,31 @@ $(document).ready(function(){
 		autoplayTimeout: 5000,
 		dots: true
 	});
-	// $('.customers-carousel').owlCarousel({
-	// 	loop: true,
-	// 	responsiveClass: true,
-	// 	responsive:{
-	// 		0:{
-	// 			items: 5,
-	// 			nav: false,
-	// 			dots: true
-	// 		},
-	// 		540:{
-	// 			items: 5,
-	// 			nav: false,
-	// 			dots: true
-	// 		},
-	// 		720:{
-	// 			items: 5,
-	// 			nav: true,
-	// 		},
-	// 		1000:{
-	// 			items: 6,
-	// 			nav: true,
-	// 			dots: false,
-	// 			navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
-	// 		}
-	// 	}
-	// });
+	$('.partner-carousel').owlCarousel({
+		loop: true,
+		autoplay: true,
+		responsiveClass: true,
+		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+		responsive:{
+			0:{
+				items: 4,
+				nav: true,
+				dots: false,
+			},
+			576:{
+				items: 4,
+				nav: true,
+				dots: false
+			},
+			768:{
+				items: 4,
+				nav: true,
+			},
+			992:{
+				items: 5,
+				nav: true,
+				dots: true,
+			}
+		}
+	});
   });
