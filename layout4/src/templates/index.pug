@@ -11,13 +11,17 @@ block body
 			.owl-carousel.owl-theme.main-carousel
 				.banner-box
 					figure
-						img.img-fluid(src="./img/home-main-slider-01.png", alt="")
+						picture
+							source(media="(max-width: 480px)", srcset="./img/home-main-slider-sm-01.jpg")
+							img.img-fluid(srcset="./img/home-main-slider-01.jpg", alt="")
 						figcaption.banner-title
 							h1 Chúng tôi là Fullstack Vietnam
 							h4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus neque qui consequuntur illum nihil.
 				.banner-box
 					figure
-						img.img-fluid(src="./img/home-main-slider-01.png", alt="")
+						picture
+							source(media="(max-width: 480px)", srcset="./img/home-main-slider-sm-01.jpg")
+							img.img-fluid(srcset="./img/home-main-slider-01.jpg", alt="")
 						figcaption.banner-title
 							h1 Chúng tôi là Fullstack Vietnam
 							h4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas necessitatibus neque qui consequuntur illum nihil.
@@ -28,7 +32,7 @@ block body
 				.col-md-4.item
 					.box
 						figure
-							img.img-fluid(src="./img/home-service-01.png", alt="")
+							img.img-fluid(src="./img/home-service-01.jpg", alt="")
 					figcaption
 						h6 Trung tâm đào tạo IT chuyên nghiệp
 						date 27/06/2018
@@ -37,7 +41,7 @@ block body
 				.col-md-4.item
 					.box
 						figure
-							img.img-fluid(src="./img/home-service-02.png", alt="")
+							img.img-fluid(src="./img/home-service-02.jpg", alt="")
 					figcaption
 						h6 Can ho Phu My Hung
 						date 27/06/2018
@@ -46,7 +50,7 @@ block body
 				.col-md-4.item
 					.box
 						figure
-							img.img-fluid(src="./img/home-service-03.png", alt="")
+							img.img-fluid(src="./img/home-service-03.jpg", alt="")
 					figcaption
 						h6 Can ho Phu My Hung
 						date 27/06/2018
@@ -136,13 +140,13 @@ block body
 					.row.project-row
 						.col-md-4.item
 							.img-box
-								img.img-fluid.own-full-width.own-monocolor(src="./img/home-service-01.png", alt="")
+								img.img-fluid.own-full-width.own-monocolor(src="./img/home-service-01.jpg", alt="")
 						.col-md-4.item
 							.img-box
-								img.img-fluid.own-full-width.own-monocolor(src="./img/home-service-02.png", alt="")
+								img.img-fluid.own-full-width.own-monocolor(src="./img/home-service-02.jpg", alt="")
 						.col-md-4.item
 							.img-box
-								img.img-fluid.own-full-width.own-monocolor(src="./img/home-service-03.png", alt="")
+								img.img-fluid.own-full-width.own-monocolor(src="./img/home-service-03.jpg", alt="")
 
 		section.customer-feedback-container.container-fluid
 			.customer-feedback-box
@@ -151,7 +155,7 @@ block body
 				.owl-carousel.owl-theme.customer-feedback-carousel
 					.customer-feedback.own-justify-content-center
 						figure
-							img.img-fluid(src="./img/girl-01.png", alt="")
+							img.img-fluid(src="./img/girl-01.jpg", alt="")
 						figcaption
 							.feedback
 								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi perferendis praesentium animi facere voluptate ipsa? Quibusdam ratione minus aliquam quod, doloribus necessitatibus? Ullam, quibusdam. Delectus quod neque minus sunt!
@@ -161,7 +165,7 @@ block body
 						
 					.customer-feedback.own-justify-content-center
 						figure
-							img.img-fluid(src="./img/girl-01.png", alt="")
+							img.img-fluid(src="./img/girl-01.jpg", alt="")
 						figcaption
 							.feedback
 								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi perferendis praesentium animi facere voluptate ipsa? Quibusdam ratione minus aliquam quod, doloribus necessitatibus? Ullam, quibusdam. Delectus quod neque minus sunt!
@@ -170,7 +174,7 @@ block body
 								h3.role CEO ABC Company
 					.customer-feedback.own-justify-content-center
 						figure
-							img.img-fluid(src="./img/girl-01.png", alt="")
+							img.img-fluid(src="./img/girl-01.jpg", alt="")
 						figcaption
 							.feedback
 								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi perferendis praesentium animi facere voluptate ipsa? Quibusdam ratione minus aliquam quod, doloribus necessitatibus? Ullam, quibusdam. Delectus quod neque minus sunt!
